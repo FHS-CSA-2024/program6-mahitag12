@@ -1,3 +1,6 @@
+//import stuff here!
+
+//Your code here
 import java.util.Scanner;
 
 public class Program6 {
@@ -30,3 +33,13 @@ public class Program6 {
       //
     }
 }
+
+//Paste console output below:
+/*
+Enter the radius: 45
+The Radius of the circle = 45.000
+The Diameter of the circle = 90.000
+The Area of the circle = 6361.720
+The Circumference of the circle = 282.743
+
+*/
