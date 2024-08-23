@@ -1,36 +1,32 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/vAE0Qazl)
-# Program 6
+import java.util.Scanner;
 
-## Program Description:  
-- Write a program to print out the radius, diameter, area, and circumference of a circle.
-- The program should get the radius from the user
-  - Use double as your primative type for the radius  
-- Use a constant definition to store the value of  pi (3.14159).
-- Circumference = 2(pi)Radius or (pi)*Diameter
-- Area = (pi)*Radius<sup>2</sup>
-- Format the output to three decimal places.
-- Choose variable names which are meaningful for this problem.
+public class Program6 {
+    public static void main(String[] args) {
+        // Define a constant for pi
+        final double PI = 3.14159;
 
-## Program Data:
-N/A
+        // Create a Scanner object to get user input
+        Scanner scanner = new Scanner(System.in);
 
-## Statements Required: 
-- Scanner
-- System.out
-- Variable Assignment
-- Final Variable
-- Variable Operators (Math)
+        // Get the radius from the user
+        System.out.print("Enter the radius: ");
+        double radius = scanner.nextDouble();
 
-## Sample Output:
->Enter the radius:
->
->3.712
->
->The Radius of the circle =			3.712
->
->The Diameter of the circle =    7.424
->
->The Area of the circle =			41.337
->
->The Circumference of the circle =		22.272
+        // Calculate the diameter
+        double diameter = 2 * radius;
 
+        // Calculate the area
+        double area = PI * radius * radius;
+
+        // Calculate the circumference
+        double circumference = 2 * PI * radius;
+
+        // Print out the results
+        System.out.printf("The Radius of the circle = %.3f\n", radius);
+        System.out.printf("The Diameter of the circle = %.3f\n", diameter);
+        System.out.printf("The Area of the circle = %.3f\n", area);
+        System.out.printf("The Circumference of the circle = %.3f\n", circumference);
+
+      //
+    }
+}
